@@ -24,3 +24,16 @@ const val=2;
 const nums=[0,1,2,2,3,0,4,2];
 const k=removeElement(nums,val);
 console.log(k);
+
+/* Learnt 
+Explanation
+When you use .splice(i, 1) to remove an element, the array gets shorter, but the loop index i still increases, causing it to skip elements.
+onst nums = [0, 1, 2, 2, 3, 0, 4, 2];
+val = 2;
+
+i = 2 ➝ nums[2] === 2 ➝ removed ➝ nums becomes [0,1,2,3,0,4,2]  
+Now i = 3 ➝ but nums[3] === 3 (skips the next 2 which shifted to index 2)
+
+Result: Not all 2's are removed.
+
+*/
