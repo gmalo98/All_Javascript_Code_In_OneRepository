@@ -37,3 +37,4 @@ Now i = 3 ➝ but nums[3] === 3 (skips the next 2 which shifted to index 2)
 Result: Not all 2's are removed.
 
 */
+;
